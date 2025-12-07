@@ -140,3 +140,20 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial update of active links
   updateActiveLinks()
 })
+
+// Additional functionality for responsive design
+function handleResize() {
+  if (window.innerWidth > 768) {
+    mobileMenuOpen = false
+    const menu = document.querySelector(".mobile-menu")
+    const btn = document.querySelector(".mobile-menu-btn")
+    if (menu) {
+      menu.classList.remove("show")
+    }
+    if (btn) {
+      btn.classList.remove("open")
+    }
+  }
+}
+
+window.addEventListener("resize", handleResize)

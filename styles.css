@@ -196,11 +196,17 @@ html:not(.dark) .theme-toggle .icon-sun {
 
 .mobile-menu-btn .icon-menu {
   display: block;
+  
 }
 
 .mobile-menu-btn .icon-x {
   display: none;
 }
+
+html.dark .mobile-menu-btn {
+  color: white;
+}
+
 
 .mobile-menu-btn.open .icon-menu {
   display: none;
